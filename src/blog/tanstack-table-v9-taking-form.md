@@ -264,8 +264,7 @@ This also means we can be more disciplined about what belongs in core. We do not
 ### 6. Reusable Table Code with createTableHook
 
 Another place Table took from Form is in reusable composition. TanStack Form has a `createFormHook` for defining shared form infrastructure once, then reusing it across an app. Table V9 now has the same idea with `createTableHook`.
-
-The new [Composable Tables example](/table/latest/examples/composable-tables) shows this pattern too. You define your common table features, row models, default options, and reusable table/cell/header components once. Then each table only brings its own columns, data, and any custom options it needs:
+The new [Composable Tables example](table/beta/docs/framework/react/examples/composable-tables) shows this pattern too. You define your common table features, row models, default options, and reusable table/cell/header components once. Then each table only brings its own columns, data, and any custom options it needs:
 
 ```tsx
 import {
